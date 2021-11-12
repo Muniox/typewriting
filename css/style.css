@@ -1,0 +1,39 @@
+body {
+  background-color: #ff5a5a;
+  height: 100%;
+  font-family: 'tradegothiclt-bold', sans-serif;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 5px;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-right: 0.05em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/*# sourceMappingURL=style.css.map */
